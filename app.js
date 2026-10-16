@@ -97,8 +97,8 @@ searchBtn.addEventListener("click", async () => {
  * 3. 한국관광공사 API 호출 및 목록 뷰 시각화 함수
  */
 async function fetchAndDisplayTourData(areaCode) {
-    // 한국관광공사 국문 관광정보 서비스 - 지역별조회 API 엔드포인트 (기본 개정 버전)
-    const url = `https://apis.data.go.kr/B551011/KorService1/areaBasedList1?serviceKey=${TOUR_API_KEY}&numOfRows=12&pageNo=1&MobileOS=ETC&MobileApp=WebProject&areaCode=${areaCode}&_type=json`;
+    // 아래 코드로 정확하게 수정해주세요.
+    const url = `http://apis.data.go.kr/B551011/KorService2/areaCode2??serviceKey=${TOUR_API_KEY}&numOfRows=12&pageNo=1&MobileOS=ETC&MobileApp=WebProject&areaCode=${areaCode}&_type=json`;
 
     const response = await fetch(url);
     if (!response.ok) throw new Error("API 네트워크 응답이 올바르지 않습니다.");
